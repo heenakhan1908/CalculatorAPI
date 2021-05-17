@@ -1,49 +1,63 @@
-package QualitykioskTraining.CalculatorAPI;
+package Qktraining.CalculatorCICD;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class TestingSubtractionTestCases {
-
-	Calculator Cal;
+public class Addition {
+	
+	CalculatorAPI obj;
 	int Result;
-	
-	@BeforeClass
-	public void Init() {
-		Cal=new Calculator();
-	}
-	
-	@BeforeMethod
-	public void ReInitialise()
+ 	@BeforeGroups("RegressionTest")
+	public void InitGroups()
 	{
+		System.out.println("Im in Before Grooup"); 
+ 		obj=new CalculatorAPI();
+
+	}
+
+ 	@BeforeClass
+	public void Init()
+	{
+		System.out.println("Im in Before Class"); 
+ 		obj=new CalculatorAPI();
+
+	}
+ 
+ 	@BeforeMethod
+	public void ReinitialiseResultVar() {
+		System.out.println("Im in Before Method"); 
 		Result=0;
 	}
+ 	
+@Test(priority=1,groups= {"RegressionTest"})
+public void TestAddition()
+{
+	System.out.println("Im in 1st Test Cases"); 
+	Result=obj.Addition(10,20);
+	Assert.assertEquals(Result,30,"Addition not worked");
+}
 
-	
-	@Test(priority = 1,groups= {"RegressionTest"})
-	public void TestSubtractionWithPositiveNumbers()
-	{
-		int Result=Cal.Subtraction(50, 10);
-		Assert.assertEquals(Result, 40,"Subtraction Does not work");
-	}
-	
-	@Test(priority=2,groups= {"RegressionTest"})
-	public void TestSubtractionWith1Positive1NegativeNumbers()
-	{
-		
-		Result=Cal.Subtraction(50, -10);
-		Assert.assertEquals(Result, 60,"Subtraction does not work with 1 Positive and 1 Negative Numbers");
-	}
-	
-	
-	@AfterClass
-	public void Teardown()
-	{
-		Cal=null;
-	}
+@Test(priority=2,groups= {"RegressionTest"})
+public void TestAdditionWithZero()
+{
+	System.out.println("Im in 2nd Test Cases"); 
+	Result=obj.Addition(0,0);
+	Assert.assertEquals(Result,0,"Addition not worked with Zero");
+}
 
+@AfterClass
+public void Teardown() {
 	
+	System.out.println("Im in After class"); 
+	obj=null;
+}
+
 }
