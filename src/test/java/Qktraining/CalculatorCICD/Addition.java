@@ -1,7 +1,6 @@
 package Qktraining.CalculatorCICD;
 
 import java.io.IOException;
-
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -14,13 +13,13 @@ import org.testng.annotations.Test;
 
 public class Addition {
 	
-	Calculator obj;
+	CalculatorAPI obj;
 	int Result;
  	@BeforeGroups("RegressionTest")
 	public void InitGroups()
 	{
 		System.out.println("Im in Before Grooup"); 
- 		obj=new Calculator();
+ 		obj=new CalculatorAPI();
 
 	}
 
@@ -28,7 +27,7 @@ public class Addition {
 	public void Init()
 	{
 		System.out.println("Im in Before Class"); 
- 		obj=new Calculator();
+ 		obj=new CalculatorAPI();
 
 	}
  
