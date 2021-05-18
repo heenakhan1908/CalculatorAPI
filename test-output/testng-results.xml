@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-18T10:15:40 IST" name="Testing" finished-at="2021-05-18T10:15:40 IST" duration-ms="405">
+    <groups>
+      <group name="RegressionTest">
+        <method signature="Addition.TestAddition()[pri:1, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" name="TestAddition" class="Qktraining.CalculatorCICD.Addition"/>
+        <method signature="Addition.TestAdditionWithZero()[pri:2, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" name="TestAdditionWithZero" class="Qktraining.CalculatorCICD.Addition"/>
+        <method signature="TestingSubtractionTestCases.TestSubtractionWith1Positive1NegativeNumbers()[pri:2, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" name="TestSubtractionWith1Positive1NegativeNumbers" class="Qktraining.CalculatorCICD.TestingSubtractionTestCases"/>
+        <method signature="TestingSubtractionTestCases.TestSubtractionWithPositiveNumbers()[pri:1, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" name="TestSubtractionWithPositiveNumbers" class="Qktraining.CalculatorCICD.TestingSubtractionTestCases"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test started-at="2021-05-18T10:15:40 IST" name="Addition Testing" finished-at="2021-05-18T10:15:40 IST" duration-ms="123">
+      <class name="Qktraining.CalculatorCICD.Addition">
+        <test-method is-config="true" signature="Init()[pri:0, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="Init" finished-at="2021-05-18T10:15:40 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Init -->
+        <test-method is-config="true" signature="ReinitialiseResultVar()[pri:0, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="ReinitialiseResultVar" finished-at="2021-05-18T10:15:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReinitialiseResultVar -->
+        <test-method signature="TestAddition()[pri:1, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="TestAddition" finished-at="2021-05-18T10:15:40 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAddition -->
+        <test-method is-config="true" signature="ReinitialiseResultVar()[pri:0, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="ReinitialiseResultVar" finished-at="2021-05-18T10:15:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReinitialiseResultVar -->
+        <test-method signature="TestAdditionWithZero()[pri:2, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="TestAdditionWithZero" finished-at="2021-05-18T10:15:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAdditionWithZero -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Qktraining.CalculatorCICD.Addition@2805c96b]" started-at="2021-05-18T10:15:40 IST" name="Teardown" finished-at="2021-05-18T10:15:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Qktraining.CalculatorCICD.Addition -->
+    </test> <!-- Addition Testing -->
+    <test started-at="2021-05-18T10:15:40 IST" name="Subtraction Testing" finished-at="2021-05-18T10:15:40 IST" duration-ms="48">
+      <class name="Qktraining.CalculatorCICD.TestingSubtractionTestCases">
+        <test-method is-config="true" signature="Init()[pri:0, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="Init" finished-at="2021-05-18T10:15:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Init -->
+        <test-method is-config="true" signature="ReInitialise()[pri:0, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="ReInitialise" finished-at="2021-05-18T10:15:40 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReInitialise -->
+        <test-method signature="TestSubtractionWithPositiveNumbers()[pri:1, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="TestSubtractionWithPositiveNumbers" finished-at="2021-05-18T10:15:40 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSubtractionWithPositiveNumbers -->
+        <test-method is-config="true" signature="ReInitialise()[pri:0, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="ReInitialise" finished-at="2021-05-18T10:15:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReInitialise -->
+        <test-method signature="TestSubtractionWith1Positive1NegativeNumbers()[pri:2, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="TestSubtractionWith1Positive1NegativeNumbers" finished-at="2021-05-18T10:15:40 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSubtractionWith1Positive1NegativeNumbers -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Qktraining.CalculatorCICD.TestingSubtractionTestCases@78aab498]" started-at="2021-05-18T10:15:40 IST" name="Teardown" finished-at="2021-05-18T10:15:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Qktraining.CalculatorCICD.TestingSubtractionTestCases -->
+    </test> <!-- Subtraction Testing -->
+  </suite> <!-- Testing -->
+</testng-results>

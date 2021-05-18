@@ -6,7 +6,7 @@
 
   <groupId>Qktraining</groupId>
   <artifactId>CalculatorCICD</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1</version>
 
   <name>CalculatorCICD</name>
   <!-- FIXME change it to the project's website -->
@@ -47,6 +47,9 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+          <suiteXmlFiles>CalculatorCICDTestCases.xml</suiteXmlFiles>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

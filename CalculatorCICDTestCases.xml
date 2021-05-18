@@ -1,0 +1,14 @@
+<suite name="Testing">
+<parameter name="RequestID" value="Req100"/>
+<test name="Addition Testing">
+<classes>
+<class name="Qktraining.CalculatorCICD.Addition"/>
+</classes>
+</test>
+
+<test name="Subtraction Testing">
+<classes>
+<class name="Qktraining.CalculatorCICD.TestingSubtractionTestCases"/>
+</classes>
+</test>
+</suite>
